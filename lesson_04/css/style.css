@@ -1,0 +1,69 @@
+@import url("reset.css");
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2');
+    font-display: swap;
+}
+
+body {
+    font-family: 'Poppins';
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.ecobazar p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #808080;
+}
+
+.article-title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.3;
+}
+p a {
+    text-decoration: underline;
+    text-decoration-color: #000066;
+    font-family: 'Tektur';
+    color: #0000ff;
+}
+p {
+    line-height: 1.6;
+}
+
+p b {
+    font-family: 'Tektur';
+    font-weight: 800;
+    word-spacing: 3px;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+.last-p {
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.last-p span {
+    color: #ff0000;
+}
