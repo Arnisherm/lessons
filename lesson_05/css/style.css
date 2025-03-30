@@ -1,0 +1,137 @@
+@import url("reset.css");
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CircularStd';
+    font-weight: 350;
+    font-style: normal;
+    src: url('../fonts/CircularStd-Book.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CircularStd';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/CircularStd-Bold.woff2') format('woff2');
+    font-display: swap;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.advantages {
+    background-color: #231F8B;
+    padding-block: 112px;
+}
+
+.advantage-inner {
+    max-width: 1040px;
+    margin-inline: auto;
+}
+
+.content {
+    margin-bottom: 70px;
+}
+
+.content-subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 1.7;
+    color: #5A54F2;
+    margin-bottom: 10px;
+}
+
+.content-title {
+    font-family: 'CircularStd';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.27;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.content-description {
+    font-family: 'CircularStd';
+    font-size: 14px;
+    font-weight: 350;
+    letter-spacing: 0.2px;
+    line-height: 1.43;
+    color: #fff;
+}
+
+.cards {
+    overflow: hidden;
+    margin-inline: -10px;
+}
+
+.card {
+    display: inline-block;
+    padding: 35px 40px;
+    max-width: 230px;
+    min-height: 288px;
+    background-color: #fff;
+    margin-inline: 15px;
+    vertical-align: top;
+}
+
+.card.down {
+    margin-top: 48px;
+}
+
+.card.hover {
+    background-color: #5A54F2;
+}
+
+.card.hover .card-title,
+.card.hover .card-description {
+    color: #fff;
+}
+
+.card.hover .card-divider {
+    background-color: #fff;
+}
+
+.card img {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-family: 'CircularStd';
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    color: #252B42;
+    margin-bottom: 20px;
+}
+
+.card-divider {
+    width: 50px;
+    height: 2px;
+    background-color: #E74040;
+    margin-bottom: 20px;
+}
+
+.card-description {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 1.43;
+    color: #737373;
+}
