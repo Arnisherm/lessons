@@ -1,0 +1,224 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+[class*="__container"] {
+    max-width: 1516px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+/* ===========================SECTION CARD================== */
+
+.card {
+    padding-block: 100px;
+}
+.product-card {
+    position: relative;
+    max-width: 312px;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+}
+.product-card:hover {
+    border: 1px solid #2C742F;
+    box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+}
+.product-card__image {
+    padding: 5px;
+}
+.product-card__content {
+    padding: 16px;
+}
+.info-card__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4D4D4D;
+}
+.info-card__price {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #1A1A1A;
+}
+.info-card__price span {
+    font-weight: 400;
+    color: #999999
+}
+.product-card__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    right: 16px;
+    bottom: 24px;
+}
+.product-card__btn:hover {
+    background-color: #00B207;
+}
+.product-card__btn:hover path{
+    stroke: #FFFFFF;
+}
+.product-card__fav {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    right: 16px;
+    top: 16px;
+}
+.product-card__view {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    right: 16px;
+    top: 62px;
+}
+.product-card__fav:hover circle,
+.product-card__view:hover circle {
+    fill: #00B207;
+}
+.product-card__fav:hover path,
+.product-card__view:hover path {
+    stroke: #fff;
+}
+
+/* ======================SECTION ADVANTAGE==================== */
+
+.advantage {
+    background-color: #5A54F2;
+    color: #fff;
+}
+.advantage__container {
+    position: relative;
+}
+.advantage__container::after {
+    content: url(../images/svg-dots.svg);
+    position: absolute;
+    top: 365px;
+    left: 48px;
+}
+.advantage__container::before {
+    content: url(../images/svg-dots-horizontal.svg);
+    position: absolute;
+    bottom: 115px;
+    right: -40px;
+}
+.block-top__image{
+    margin-right: 70px;   
+    margin-top: -41px;
+}
+.block-top {
+    position: relative;
+    margin-left: 130px;
+    margin-bottom: 55px;
+    z-index: 100;
+}
+.block-top::after {
+    content: '';
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 5px solid #FFBA49;
+    position: absolute;
+    left: -130px;
+    top: 127px;
+}
+.block-top ::before {
+    content: '';
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px solid #FFBA49;
+    position: absolute;
+    left: -100px;
+    top: 165px;
+    z-index: -100;
+}
+.block-bottom__image{
+    margin-bottom: -26px;
+}
+.block-bottom {
+    position: relative;
+    display: block;
+    max-width: 985px;
+    margin-right: 130px;
+    margin-left: auto;
+    z-index: 100;
+}
+.block-bottom::after {
+    content: '';
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 5px solid #FFBA49;
+    position: absolute;
+    right: 273px;
+    top: -48px;
+}
+.block-bottom ::before {
+    content: '';
+    width: 262px;
+    height: 262px;
+    border-radius: 50%;
+    border: 5px solid #FFBA49;
+    position: absolute;
+    right: -129px;
+    top: -26px;
+    z-index: -100;
+}
+.block-bottom__content{
+    margin-right: 70px;
+}
+.block-top__image,
+.block-bottom__image {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: -25px 20px 44px 0 rgba(84, 48, 209, 0.4);
+}
+.block-top__content,
+.block-bottom__content {
+    display: inline-block;
+    vertical-align: middle;
+}
+.content__title {
+    font-family: 'CircularStd';
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 13px;
+}
+.content__desc {
+    max-width: 480px;
+    font-size: 18px;
+    line-height: 1.66;
+    margin-bottom: 39px;
+}
+.content__link {
+    padding: 22px 26px;
+    background-color: #F35B09;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 60px;
+}
+.content__link:hover {
+    background-color: #a03c06;
+}
+
+/* ======================FOOTER========================== */
+
+.footer {
+    padding-block: 100px;
+}
