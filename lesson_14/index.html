@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>lesson_14</title>
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <header class="header">
+                
+            </header>
+
+            <main class="page">
+                <section class="checkout">
+                    <div class="checkout__container">
+                        <div class="checkout__content content">
+                            <div class="content__form form">
+                                <form class="form__body" action="#" id="form">
+                                    <div class="form__billing billing">
+                                        <h2 class="form__title billing__title">Billing Information</h2>
+                                        <div class="form__items">
+                                            <div class="form__item">
+                                                <label class="form__label" for="formFirstName">First name</label>
+                                                <input class="form__input" id="formFirstName" type="text" name="first-name" placeholder="Your first name">
+                                            </div>
+                                            <div class="form__item">
+                                                <label class="form__label" for="formLastName">Last name</label>
+                                                <input class="form__input" id="formLastName" type="text" name="last-name" placeholder="Your last name">
+                                            </div>
+                                            <div class="form__item">
+                                                <label class="form__label" for="formCompanyName">Company Name <span>(optional)</span></label>
+                                                <input class="form__input" id="formCompanyName" type="text" name="company-name" placeholder="Company name">
+                                            </div>
+                                            <div class="form__item item-address">
+                                                <label class="form__label" for="formAddress">Street Address</label>
+                                                <input class="form__input" id="formAddress" type="text" name="address" placeholder="Email">
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="form__label">Country / Region</div>
+                                                <select class="form__select" name="country">
+                                                    <option value="" selected>Select</option>
+                                                    <option value="">Country-1</option>
+                                                    <option value="">Country-2</option>
+                                                    <option value="">Country-3</option>
+                                                </select>
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="form__label">States</div>
+                                                <select class="form__select" name="states">
+                                                    <option value="" selected>Selects</option>
+                                                    <option value="">State-1</option>
+                                                    <option value="">State-2</option>
+                                                    <option value="">State-3</option>
+                                                </select>
+                                            </div>
+                                            <div class="form__item">
+                                                <label class="form__label" for="formZip">Zip Code</label>
+                                                <input class="form__input" id="formZip" type="text" name="zip-code" placeholder="Zip Code">
+                                            </div>
+                                            <div class="form__item item-email">
+                                                <label class="form__label" for="formEmail">Email</label>
+                                                <input class="form__input" id="formEmail" type="text" name="e-mail" placeholder="Email Address">
+                                            </div>
+                                            <div class="form__item item-phone">
+                                                <label class="form__label" for="formPhone">Phone</label>
+                                                <input class="form__input" id="formPhone" type="text" name="phone" placeholder="Phone number">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input class="checkbox__input" id="formShip" type="checkbox" name="ship">
+                                            <label class="checkbox__label" for="formShip">Ship to a different address</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form__additional additional">
+                                        <h2 class="form__title additional__title">Additional Info</h2>
+                                        <div class="form__item">
+                                            <label class="form__label" for="formNotes">Order Notes (Optional)</label>
+                                            <textarea name="notes" id="formNotes" class="form__input" ></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="content__order order">
+                                <div class="order__summary summary">
+                                    <h3 class="summary__title form__title">Order Summery</h3>
+                                    <div class="summary__block">
+                                        <div class="summary__block-item summary__item">
+                                            <div class="summary__item-image">
+                                                <img src="images/green-capsicum.png" alt="">
+                                            </div>
+                                            <h4 class="summary__item-title">Green Capsicum</h4>
+                                            <p class="summary__item-count">x5</p>
+                                        </div>
+                                        <p class="summary__block-price">$70.00</p>
+                                    </div>
+                                    <div class="summary__block">
+                                        <div class="summary__block-item summary__item">
+                                            <div class="summary__item-image">
+                                                <img src="images/red-capsicum.png" alt="">
+                                            </div>
+                                            <h4 class="summary__item-title">Red Capsicum</h4>
+                                            <p class="summary__item-count">x1</p>
+                                        </div>
+                                        <p class="summary__block-price">$14.00</p>
+                                    </div>
+                                </div>
+                                <div class="order__subtotal subtotal">
+                                    <p class="subtotal__item">Subtotal:</p>
+                                    <p class="subtotal__price">$84.00</p>
+                                </div>
+                                <div class="order__shipping shipping">
+                                    <p class="shipping__item">Shipping:</p>
+                                    <p class="shipping__price">Free</p>
+                                </div>
+                                <div class="order__total total">
+                                    <p class="total__item">Total:</p>
+                                    <p class="total__price">$84.00</p>
+                                </div>
+                                <div class="order__payment payment">
+                                    <h3 class="payment__title form__title">Payment Method</h3>
+                                    <div class="options">
+                                        <div class="options__item">
+                                            <input id="paymentCash" type="radio" checked value="cash" name="payment" class="options__input">
+                                            <label for="paymentCash"class="options__label">Cash on Delivery</label>
+                                        </div>
+                                        <div class="options__item">
+                                            <input id="paymentPaypal" type="radio" value="paypal" name="payment" class="options__input">
+                                            <label for="paymentPaypal"class="options__label">Paypal</label>
+                                        </div>
+                                        <div class="options__item">
+                                            <input id="paymentAmazon" type="radio" value="amazon" name="payment" class="options__input">
+                                            <label for="paymentAmazon"class="options__label">Amazon Pay</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="order__btn">Place Order</button>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer"></footer>
+
+        </div>
+    </body>
+</html>
